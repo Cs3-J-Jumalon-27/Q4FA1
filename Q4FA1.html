@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #151e3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    form {
+        width: 500px;
+        padding: 10px;
+        background-color: #48aaad;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #63c5da;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #52b2bf;
+    }
+
+    h1,p{
+        text-align:center;
+    }
+</style>
+</head>
+<body>
+<form action="#" method="post">
+    <h1>Sign Up Page</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="name"><b>Name:</b></label>
+    <input type="text" placeholder="Your name" name="name" required>
+
+    <label for="username"><b>Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Comfirm Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+
+    <label for="email"><b>Email:</b></label>
+    <input type="email" placeholder="Enter Email" id="email" name="email" required>
+
+    <label for="address"><b>Address:</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="userInterest"><b>User Interest:</b></label>
+    <textarea id="interests" name="interests"></textarea>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+   
+    <h5>Thank you for signing up</h5>
+</form>
+</body>
+</html>
